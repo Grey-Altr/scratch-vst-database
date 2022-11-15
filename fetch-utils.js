@@ -4,8 +4,14 @@ const SUPABASE_KEY =
 
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-export async function getVST() {
-    const response = await client.from('vst_db').select('*');
+export async function getVSTs() {
+    const response = await client.from('vst_db').select();
 
-    return response;
+    return response.data;
+}
+
+export async function getVST(id) {
+    const response = await client.from('vst_db').select().match({ id: id }).single();
+
+    return response.data;
 }

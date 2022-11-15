@@ -1,12 +1,18 @@
 /* Imports */
-import { getVST } from './fetch-utils.js';
+import { getVST, getVSTs } from './fetch-utils.js';
+import { renderVSTCard } from './render-utils.js';
 /* Get DOM Elements */
 const itemContainer = document.getElementById('item-container');
 /* State */
 
 /* Events */
 window.addEventListener('load', async () => {
-    const vst = await getVST();
+    const vsts = await getVSTs();
+    console.log(vsts.data);
+    for (let vst of vsts) {
+        const vstEl = renderVSTCard(vst);
+        itemContainer.append(vstEl);
+    }
 });
 /* Display Functions */
 
