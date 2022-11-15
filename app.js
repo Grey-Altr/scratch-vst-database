@@ -8,7 +8,7 @@ const itemContainer = document.getElementById('item-container');
 /* Events */
 window.addEventListener('load', async () => {
     const vsts = await getVSTs();
-    console.log(vsts.data);
+
     for (let vst of vsts) {
         const vstEl = renderVSTCard(vst);
         itemContainer.append(vstEl);
