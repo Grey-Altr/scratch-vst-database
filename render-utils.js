@@ -49,7 +49,7 @@ export function renderVSTDetail(vst) {
     infoEl.textContent = vst.info;
     infoEl.classList.add('info');
 
-    imgEl.src = `..assets/${vst.id}.jpeg`;
+    imgEl.src = `../assets/${vst.id}.png`;
 
     div.append(nameEl, compEl, typeEl, updateEl, priceEl, infoEl, imgEl);
 

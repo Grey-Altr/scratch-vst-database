@@ -1,5 +1,5 @@
 /* Imports */
-import { getVST, getVSTs } from './fetch-utils.js';
+import { getVSTs } from './fetch-utils.js';
 import { renderVSTCard } from './render-utils.js';
 /* Get DOM Elements */
 const itemContainer = document.getElementById('item-container');
