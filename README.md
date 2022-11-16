@@ -4,6 +4,9 @@
 
 If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
 
+![wireframe](./assets/wireframe.png)
+![detail](./assets/detail.png)
+
 ## Making a plan
 
 1. **Make a drawing of your app. Simple "wireframes"**
@@ -25,3 +28,5 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+
+initcommit
